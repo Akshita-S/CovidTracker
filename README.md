@@ -6,7 +6,7 @@ Node Version : v21.2.0
 npm version : 10.2.3
 
 1. Make sure the dependencies are installed
-2. Take the clone of the repo using "git clone https://github.com/Arshadpd/CovidTracker.git"
+2. Take the clone of the repo using "https://github.com/Akshita-S/CovidTracker"
 3. Open the cloned folder in visual studio code
 4. In the terminal run the command "npm install" to install the dependcies of the project mentioned in package.json
 5. once the depencies are installed, run the dev script to run the application "npm run dev".
