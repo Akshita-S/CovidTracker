@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import axios from "axios";
+import { isValidUsername, isValidPassword } from '../utils/validation';
 
 const defaultData = { username: "", password: "" };
 
@@ -26,6 +27,16 @@ const Login = () => {
             alert("Please fill all mandatory paramters");
             return;
         }
+        if(!isValidUsername(data.username)){
+            alert('Please enter valid username & password');
+            return;
+        }
+
+        if(!isValidPassword(data.password)){
+            alert('Please enter valid username & password');
+            return;
+        }
+        
         try {
             const response = await axios.post('/api/users/login', data);
             //setData(defaultData);
